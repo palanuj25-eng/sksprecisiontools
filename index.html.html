@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SKS Precision Tools | High-Precision Tool Room & Die-Mold Manufacturing</title>
+  
+  <!-- Google Fonts: Space Grotesk for technical headings & Inter for crisp UI text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- FontAwesome for crisp industrial & UI icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+          },
+          colors: {
+            slateDark: '#0f172a',
+            slateCard: '#1e293b',
+            industrialOrange: '#f97316',
+            industrialOrangeHover: '#ea580c',
+            steelGrey: '#64748b',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Subtle Blueprint Grid Pattern for Industrial Hero */
+    .blueprint-grid {
+      background-color: #0f172a;
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(rgba(249, 115, 22, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(249, 115, 22, 0.04) 1px, transparent 1px);
+      background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+      background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+    }
+
+    /* Precision Crosshair Accent */
+    .precision-border {
+      position: relative;
+    }
+    .precision-border::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 3px;
+      background-color: #f97316;
+      border-radius: 2px;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0f172a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #f97316;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased selection:bg-orange-500 selection:text-white">
+
+  <!-- Top Industrial Info Bar -->
+  <div class="bg-slate-950 text-slate-300 text-xs py-2 border-b border-slate-800 hidden md:block">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+      <div class="flex items-center space-x-6">
+        <span class="flex items-center gap-2">
+          <i class="fa-solid fa-location-dot text-orange-500"></i>
+          Habibpur, Greater Noida, Uttar Pradesh, India
+        </span>
+        <span class="flex items-center gap-2">
+          <i class="fa-solid fa-certificate text-orange-500"></i>
+          GST &amp; Udyam MSME Registered Vendor
+        </span>
+      </div>
+      <div class="flex items-center space-x-6">
+        <a href="tel:+918791400702" class="hover:text-orange-400 transition flex items-center gap-1.5">
+          <i class="fa-solid fa-phone text-orange-500"></i> +91 87914 00702
+        </a>
+        <a href="mailto:sksprecisiontools@gmail.com" class="hover:text-orange-400 transition flex items-center gap-1.5">
+          <i class="fa-solid fa-envelope text-orange-500"></i> sksprecisiontools@gmail.com
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="sticky top-0 z-40 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#home" class="flex items-center gap-3.5 group">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-lg shadow-orange-500/20 group-hover:scale-105 transition-transform">
+            <!-- Custom Precision Gear & Micrometer Caliper SVG -->
+            <svg class="w-7 h-7 text-white" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="18" cy="18" r="7" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="18" cy="18" r="2.5" fill="currentColor"/>
+              <path d="M18 4V8M18 28V32M4 18H8M28 18H32M8.1 8.1L10.9 10.9M25.1 25.1L27.9 27.9M27.9 8.1L25.1 10.9M10.9 25.1L8.1 27.9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M5 13H11M25 23H31" stroke="#0f172a" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div>
+            <span class="font-display font-bold text-xl sm:text-2xl tracking-wider text-white block leading-none">
+              SKS <span class="text-orange-500">PRECISION</span> TOOLS
+            </span>
+            <span class="text-[11px] uppercase tracking-[0.2em] text-slate-400 font-medium block mt-1">
+              Tool Room &amp; Precision Engineering
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center space-x-8">
+          <a href="#home" class="text-sm font-medium text-slate-200 hover:text-orange-400 transition">Home</a>
+          <a href="#about" class="text-sm font-medium text-slate-200 hover:text-orange-400 transition">About Us</a>
+          <a href="#capabilities" class="text-sm font-medium text-slate-200 hover:text-orange-400 transition">Capabilities</a>
+          <a href="#machinery" class="text-sm font-medium text-slate-200 hover:text-orange-400 transition">Machinery</a>
+          <a href="#materials" class="text-sm font-medium text-slate-200 hover:text-orange-400 transition">Materials &amp; Finishes</a>
+          <a href="#contact" class="px-5 py-2.5 rounded-lg bg-orange-500 hover:bg-orange-600 text-white font-display font-semibold text-sm tracking-wide shadow-md shadow-orange-500/25 transition-all flex items-center gap-2">
+            <span>Request Quote</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" aria-label="Toggle Menu" class="lg:hidden p-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 focus:outline-none">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-slate-900 border-t border-slate-800 px-4 pt-3 pb-6 space-y-2">
+      <a href="#home" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-orange-400">Home</a>
+      <a href="#about" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-orange-400">About Us</a>
+      <a href="#capabilities" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-orange-400">Capabilities</a>
+      <a href="#machinery" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-orange-400">Machinery</a>
+      <a href="#materials" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-200 hover:bg-slate-800 hover:text-orange-400">Materials &amp; Finishes</a>
+      <div class="pt-2">
+        <a href="#contact" class="mobile-link block w-full text-center px-4 py-3 rounded-lg bg-orange-500 hover:bg-orange-600 text-white font-display font-semibold">
+          Request Instant Quote
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. HERO SECTION -->
+  <section id="home" class="blueprint-grid relative overflow-hidden pt-14 pb-20 lg:pt-24 lg:pb-28 border-b border-slate-800">
+    <!-- Decorative Radial Glow -->
+    <div class="absolute top-0 right-0 -translate-y-12 translate-x-1/4 w-[500px] h-[500px] bg-orange-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-0 left-0 translate-y-1/3 -translate-x-1/4 w-[400px] h-[400px] bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/90 border border-slate-700 text-orange-400 text-xs font-semibold tracking-wider uppercase mb-6">
+            <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+            Greater Noida &amp; Delhi-NCR Precision Hub
+          </div>
+
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.12] tracking-tight mb-6">
+            High-Precision Tool Room &amp; <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-500">Custom Die-Mold</span> Manufacturing
+          </h1>
+
+          <p class="text-slate-300 text-lg sm:text-xl leading-relaxed mb-8 max-w-2xl">
+            Delivering micron-level dimensional accuracy, rapid turnaround, and reliable industrial job-work for Tier-1 &amp; Tier-2 automotive, automation, and manufacturing enterprises across Greater Noida &amp; NCR.
+          </p>
+
+          <!-- Primary & Secondary CTAs -->
+          <div class="flex flex-col sm:flex-row gap-4 mb-12">
+            <button onclick="openQuoteModal()" class="px-7 py-4 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-display font-bold text-base tracking-wide shadow-xl shadow-orange-500/25 transition-all flex items-center justify-center gap-2.5 cursor-pointer">
+              <i class="fa-solid fa-file-invoice"></i>
+              <span>Get Instant Quote</span>
+            </button>
+            <a href="#capabilities" class="px-7 py-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 font-display font-semibold text-base tracking-wide transition-all flex items-center justify-center gap-2.5">
+              <span>Explore Capabilities</span>
+              <i class="fa-solid fa-chevron-down text-xs text-orange-400"></i>
+            </a>
+          </div>
+
+          <!-- Trust Badges / Metrics Grid -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-slate-800">
+            <div class="bg-slate-900/70 border border-slate-800/80 p-3.5 rounded-xl">
+              <div class="text-orange-500 text-lg mb-1"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="font-display font-bold text-white text-sm">GST &amp; Udyam</div>
+              <div class="text-xs text-slate-400">MSME Registered</div>
+            </div>
+            <div class="bg-slate-900/70 border border-slate-800/80 p-3.5 rounded-xl">
+              <div class="text-orange-500 text-lg mb-1"><i class="fa-solid fa-crosshairs"></i></div>
+              <div class="font-display font-bold text-white text-sm">±0.005 mm</div>
+              <div class="text-xs text-slate-400">Micron Tolerance</div>
+            </div>
+            <div class="bg-slate-900/70 border border-slate-800/80 p-3.5 rounded-xl">
+              <div class="text-orange-500 text-lg mb-1"><i class="fa-solid fa-truck-fast"></i></div>
+              <div class="font-display font-bold text-white text-sm">On-Time</div>
+              <div class="text-xs text-slate-400">Industrial Delivery</div>
+            </div>
+            <div class="bg-slate-900/70 border border-slate-800/80 p-3.5 rounded-xl">
+              <div class="text-orange-500 text-lg mb-1"><i class="fa-solid fa-gears"></i></div>
+              <div class="font-display font-bold text-white text-sm">End-to-End</div>
+              <div class="text-xs text-slate-400">CAD to Surface Finish</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Technical Visual Card -->
+        <div class="lg:col-span-5">
+          <div class="relative bg-slate-900 border border-slate-700/80 rounded-2xl p-6 sm:p-8 shadow-2xl">
+            <!-- Technical Blueprint Header -->
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-6">
+              <div>
+                <span class="text-[11px] font-mono uppercase tracking-widest text-orange-400 block">SPECIFICATION SHEET // 01</span>
+                <h3 class="font-display font-bold text-white text-lg">Precision Tool Room Standards</h3>
+              </div>
+              <span class="px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono">
+                ACTIVE FLOOR
+              </span>
+            </div>
+
+            <!-- Custom Technical SVG Diagram of Precision Die Insert & Caliper -->
+            <div class="bg-slate-950 rounded-xl p-5 border border-slate-800 mb-6 relative overflow-hidden">
+              <svg class="w-full h-48" viewBox="0 0 400 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Grid lines -->
+                <line x1="0" y1="90" x2="400" y2="90" stroke="#1e293b" stroke-dasharray="4 4"/>
+                <line x1="200" y1="0" x2="200" y2="180" stroke="#1e293b" stroke-dasharray="4 4"/>
+                
+                <!-- Precision Die Block Isometric/Technical Representation -->
+                <rect x="85" y="45" width="230" height="90" rx="6" fill="#0f172a" stroke="#64748b" stroke-width="2"/>
+                <rect x="105" y="62" width="190" height="56" rx="4" fill="#1e293b" stroke="#f97316" stroke-width="1.5"/>
+                
+                <!-- Precision Bore Holes -->
+                <circle cx="135" cy="90" r="14" fill="#0f172a" stroke="#94a3b8" stroke-width="2"/>
+                <circle cx="135" cy="90" r="6" stroke="#f97316" stroke-width="1.2" stroke-dasharray="2 2"/>
+                
+                <circle cx="200" cy="90" r="18" fill="#0f172a" stroke="#f97316" stroke-width="2"/>
+                <circle cx="200" cy="90" r="9" stroke="#38bdf8" stroke-width="1.2"/>
+                
+                <circle cx="265" cy="90" r="14" fill="#0f172a" stroke="#94a3b8" stroke-width="2"/>
+                <circle cx="265" cy="90" r="6" stroke="#f97316" stroke-width="1.2" stroke-dasharray="2 2"/>
+
+                <!-- Dimension Callouts -->
+                <line x1="85" y1="28" x2="315" y2="28" stroke="#f97316" stroke-width="1"/>
+                <line x1="85" y1="22" x2="85" y2="38" stroke="#f97316" stroke-width="1"/>
+                <line x1="315" y1="22" x2="315" y2="38" stroke="#f97316" stroke-width="1"/>
+                <rect x="155" y="18" width="90" height="18" rx="3" fill="#0f172a"/>
+                <text x="200" y="30" fill="#f97316" font-family="monospace" font-size="10" text-anchor="middle">TOL ±0.005mm</text>
+
+                <text x="200" y="162" fill="#94a3b8" font-family="monospace" font-size="10" text-anchor="middle">MAT: H13 / EN31 | HRC 58-62 | NX CAD/CAM</text>
+              </svg>
+            </div>
+
+            <!-- Live Capabilities Checklist -->
+            <ul class="space-y-3 text-sm text-slate-300">
+              <li class="flex items-center justify-between py-1.5 border-b border-slate-800/80">
+                <span class="flex items-center gap-2.5"><i class="fa-solid fa-check-circle text-orange-500"></i> VMC &amp; Wire-Cut EDM Machining</span>
+                <span class="font-mono text-xs text-slate-400">24/7 Shift Ready</span>
+              </li>
+              <li class="flex items-center justify-between py-1.5 border-b border-slate-800/80">
+                <span class="flex items-center gap-2.5"><i class="fa-solid fa-check-circle text-orange-500"></i> Custom SPM &amp; Robotics Fixtures</span>
+                <span class="font-mono text-xs text-slate-400">Turnkey Build</span>
+              </li>
+              <li class="flex items-center justify-between py-1.5">
+                <span class="flex items-center gap-2.5"><i class="fa-solid fa-check-circle text-orange-500"></i> Siemens NX &amp; AutoCAD Engineering</span>
+                <span class="font-mono text-xs text-slate-400">3D Modeling</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. ABOUT US & INDUSTRIAL CREDIBILITY -->
+  <section id="about" class="py-20 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-6">
+          <div class="precision-border pt-3 mb-3">
+            <span class="text-xs font-bold uppercase tracking-widest text-orange-600">About SKS Precision Tools</span>
+          </div>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-slate-900 mb-6 leading-tight">
+            Engineering Excellence &amp; Reliable Tool Room Partner in Greater Noida
+          </h2>
+          <p class="text-slate-600 text-base sm:text-lg leading-relaxed mb-5">
+            Strategically located in the industrial hub of <strong>Habibpur, Greater Noida (Uttar Pradesh)</strong>, <strong>SKS Precision Tools</strong> specializes in high-accuracy tool room manufacturing, custom die &amp; mold child parts, special purpose machines (SPMs), and precision CNC/VMC job-work.
+          </p>
+          <p class="text-slate-600 text-base leading-relaxed mb-8">
+            Led by experienced technical leadership, we bridge the gap between complex CAD engineering and rugged shop-floor execution. Whether you require single-piece prototype tooling, critical die inserts hardened to 60 HRC, or batch-production robotics fixtures, our facility delivers repeatable quality with complete GST &amp; MSME vendor compliance.
+          </p>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-orange-500/10 text-orange-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i class="fa-solid fa-compass-drafting text-lg"></i>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-slate-900 text-base">CAD/CAM Driven</h4>
+                <p class="text-xs text-slate-600 mt-1">Direct IGES, STEP, DXF &amp; DWG processing via Siemens NX &amp; AutoCAD.</p>
+              </div>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-lg bg-slate-900 text-orange-400 flex items-center justify-center shrink-0 mt-0.5">
+                <i class="fa-solid fa-file-shield text-lg"></i>
+              </div>
+              <div>
+                <h4 class="font-display font-bold text-slate-900 text-base">Vendor-Ready Compliance</h4>
+                <p class="text-xs text-slate-600 mt-1">Full GST invoicing, Udyam MSME registration &amp; dimensional inspection reports.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Stats & Highlights Panel -->
+        <div class="lg:col-span-6">
+          <div class="bg-slate-900 rounded-2xl p-8 sm:p-10 text-white shadow-xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-orange-500/10 rounded-bl-full"></div>
+            <h3 class="font-display text-2xl font-bold mb-6 flex items-center gap-3">
+              <span class="w-2.5 h-7 bg-orange-500 rounded-sm"></span>
+              Shop-Floor Operational Strengths
+            </h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="bg-slate-800/70 border border-slate-700/80 p-5 rounded-xl">
+                <div class="text-3xl font-display font-bold text-orange-500 mb-1">100%</div>
+                <div class="font-semibold text-white text-sm mb-1">Stage-Wise Inspection</div>
+                <p class="text-xs text-slate-400">Calibrated micrometers, height gauges, and pin gauges used at every machining stage.</p>
+              </div>
+
+              <div class="bg-slate-800/70 border border-slate-700/80 p-5 rounded-xl">
+                <div class="text-3xl font-display font-bold text-orange-500 mb-1">48-72h</div>
+                <div class="font-semibold text-white text-sm mb-1">Rapid Breakdown Support</div>
+                <p class="text-xs text-slate-400">Priority urgent manufacturing for line-stoppage die spares &amp; replacement inserts.</p>
+              </div>
+
+              <div class="bg-slate-800/70 border border-slate-700/80 p-5 rounded-xl">
+                <div class="text-3xl font-display font-bold text-orange-500 mb-1">5+</div>
+                <div class="font-semibold text-white text-sm mb-1">Industrial Alloy Grades</div>
+                <p class="text-xs text-slate-400">Expert machining of pre-hardened &amp; annealed H13, EN31, EN8, S13 &amp; MS steels.</p>
+              </div>
+
+              <div class="bg-slate-800/70 border border-slate-700/80 p-5 rounded-xl">
+                <div class="text-3xl font-display font-bold text-orange-500 mb-1">NCR</div>
+                <div class="font-semibold text-white text-sm mb-1">Direct Logistics Coverage</div>
+                <p class="text-xs text-slate-400">Seamless dispatch across Greater Noida, Noida, Ghaziabad, Faridabad &amp; Gurugram.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. CORE CAPABILITIES & PRODUCTS -->
+  <section id="capabilities" class="py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block px-3 py-1 rounded-full bg-orange-500/10 text-orange-600 text-xs font-bold uppercase tracking-widest mb-3">
+          Core Engineering Solutions
+        </span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+          Capabilities &amp; Precision Product Line
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg">
+          From intricate die inserts to custom multi-head special purpose machines, we engineer components built for continuous industrial duty cycles.
+        </p>
+      </div>
+
+      <!-- 4 Interactive Capability Cards -->
+      <div class="grid md:grid-cols-2 gap-8">
+        
+        <!-- Card 1: Die & Mold Child Parts -->
+        <div class="group bg-white rounded-2xl border border-slate-200 hover:border-orange-500 p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-14 h-14 rounded-xl bg-slate-900 group-hover:bg-orange-500 text-orange-400 group-hover:text-white flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-cubes text-2xl"></i>
+              </div>
+              <span class="text-xs font-mono font-semibold text-slate-400 group-hover:text-orange-600">CAP // 01</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-slate-900 mb-3">
+              Die &amp; Mold Child Parts &amp; Precision Inserts
+            </h3>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+              High-wear resistance core pins, cavity inserts, punches, guide pillars, bushes, ejector sleeves, and custom die plates engineered for sheet metal stamping and injection molding dies.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Core &amp; Cavity Inserts</span>
+            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Precision Punches</span>
+            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Die Plates &amp; Blocks</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Special Purpose Machines (SPMs) -->
+        <div class="group bg-white rounded-2xl border border-slate-200 hover:border-orange-500 p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-14 h-14 rounded-xl bg-slate-900 group-hover:bg-orange-500 text-orange-400 group-hover:text-white flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-industry text-2xl"></i>
+              </div>
+              <span class="text-xs font-mono font-semibold text-slate-400 group-hover:text-orange-600">CAP // 02</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-slate-900 mb-3">
+              Special Purpose Machines (3-Head Hydraulic Drilling SPMs)
+            </h3>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+              Custom-designed and fabricated multi-spindle hydraulic drilling, tapping, and boring SPMs engineered to slash cycle times and maximize mass-production repeatability on automotive assembly lines.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">3-Head Drilling SPMs</span>
+            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Hydraulic Fixtures</span>
+            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Custom Jigs</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Automation & Robotics Components -->
+        <div class="group bg-white rounded-2xl border border-slate-200 hover:border-orange-500 p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-14 h-14 rounded-xl bg-slate-900 group-hover:bg-orange-500 text-orange-400 group-hover:text-white flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-robot text-2xl"></i>
+              </div>
+              <span class="text-xs font-mono font-semibold text-slate-400 group-hover:text-orange-600">CAP // 03</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-slate-900 mb-3">
+              Automation &amp; Robotics Components
+            </h3>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+              Precision-machined end-of-arm tooling (EOAT) parts, Robot Cylinder Pad Sets, heavy-duty Spring Holders, gripper jaws, and sensor mounting brackets for automated weld and assembly cells.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Robot Cylinder Pad Sets</span>
+            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Spring Holders</span>
+            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">EOAT Brackets</span>
+          </div>
+        </div>
+
+        <!-- Card 4: Precision Tool Room Job Work -->
+        <div class="group bg-white rounded-2xl border border-slate-200 hover:border-orange-500 p-8 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-6">
+              <div class="w-14 h-14 rounded-xl bg-slate-900 group-hover:bg-orange-500 text-orange-400 group-hover:text-white flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-screwdriver-wrench text-2xl"></i>
+              </div>
+              <span class="text-xs font-mono font-semibold text-slate-400 group-hover:text-orange-600">CAP // 04</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-slate-900 mb-3">
+              Precision Tool Room Job Work
+            </h3>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+              Complete contract machining services including heavy roughing, precision finish turning, multi-axis VMC milling, intricate Wire-Cut EDM profiles, and mirror-finish surface grinding.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Roughing &amp; Finish Turning</span>
+            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">VMC Milling</span>
+            <span class="px-3 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-medium">Surface Grinding</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. IN-HOUSE MACHINERY & INFRASTRUCTURE -->
+  <section id="machinery" class="py-20 bg-slate-900 text-white border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+        <div>
+          <span class="inline-block px-3 py-1 rounded-full bg-orange-500/15 border border-orange-500/30 text-orange-400 text-xs font-bold uppercase tracking-widest mb-3">
+            Shop-Floor Infrastructure
+          </span>
+          <h2 class="font-display text-3xl sm:text-4xl font-bold text-white">
+            In-House Machinery &amp; CAD/CAM Suite
+          </h2>
+        </div>
+        <p class="text-slate-400 max-w-md text-sm sm:text-base">
+          Equipped with high-rigidity metal cutting machinery and industry-standard digital engineering software for tight-tolerance execution.
+        </p>
+      </div>
+
+      <!-- Interactive Machinery Filter Tabs -->
+      <div class="flex flex-wrap gap-2 mb-10" id="machinery-filters">
+        <button data-filter="all" class="machine-tab active px-4 py-2 rounded-lg text-sm font-display font-semibold bg-orange-500 text-white transition cursor-pointer">
+          All Equipment (6)
+        </button>
+        <button data-filter="cnc" class="machine-tab px-4 py-2 rounded-lg text-sm font-display font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition cursor-pointer">
+          CNC &amp; EDM
+        </button>
+        <button data-filter="conventional" class="machine-tab px-4 py-2 rounded-lg text-sm font-display font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition cursor-pointer">
+          Grinding, Milling &amp; Lathe
+        </button>
+        <button data-filter="software" class="machine-tab px-4 py-2 rounded-lg text-sm font-display font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition cursor-pointer">
+          CAD / CAM Engineering
+        </button>
+      </div>
+
+      <!-- Machinery Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="machinery-grid">
+        
+        <!-- Machine 1: VMC -->
+        <div data-category="cnc" class="machine-card bg-slate-800/80 border border-slate-700 hover:border-orange-500/70 rounded-2xl p-6 transition-all">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-1 rounded bg-orange-500/15 text-orange-400 font-mono text-xs font-semibold">CNC MILLING</span>
+            <i class="fa-solid fa-microchip text-slate-500 text-xl"></i>
+          </div>
+          <h3 class="font-display text-xl font-bold text-white mb-2">VMC Machines</h3>
+          <p class="text-xs text-orange-400 font-medium mb-3">Vertical Machining Centers</p>
+          <p class="text-slate-300 text-sm leading-relaxed mb-4">
+            High-speed, rigid vertical machining centers capable of complex 3D contour milling, precision pocket boring, and hardened steel die machining.
+          </p>
+          <div class="text-xs font-mono text-slate-400 pt-3 border-t border-slate-700/80 flex justify-between">
+            <span>Accuracy: ±0.005 mm</span>
+            <span>3-Axis High Speed</span>
+          </div>
+        </div>
+
+        <!-- Machine 2: Wire-Cut EDM -->
+        <div data-category="cnc" class="machine-card bg-slate-800/80 border border-slate-700 hover:border-orange-500/70 rounded-2xl p-6 transition-all">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-1 rounded bg-orange-500/15 text-orange-400 font-mono text-xs font-semibold">SPARK EROSION</span>
+            <i class="fa-solid fa-bolt text-slate-500 text-xl"></i>
+          </div>
+          <h3 class="font-display text-xl font-bold text-white mb-2">Wire-Cut EDM Machines</h3>
+          <p class="text-xs text-orange-400 font-medium mb-3">CNC Electrical Discharge Machining</p>
+          <p class="text-slate-300 text-sm leading-relaxed mb-4">
+            Ultra-fine wire erosion for sharp internal corners, intricate punch &amp; die profiles, taper cutting, and post-heat-treatment hardened tool steels.
+          </p>
+          <div class="text-xs font-mono text-slate-400 pt-3 border-t border-slate-700/80 flex justify-between">
+            <span>Kerf Precision: Micron</span>
+            <span>Hardened Steel Ready</span>
+          </div>
+        </div>
+
+        <!-- Machine 3: Precision Surface Grinders -->
+        <div data-category="conventional" class="machine-card bg-slate-800/80 border border-slate-700 hover:border-orange-500/70 rounded-2xl p-6 transition-all">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-1 rounded bg-blue-500/15 text-blue-400 font-mono text-xs font-semibold">FINISHING</span>
+            <i class="fa-solid fa-layer-group text-slate-500 text-xl"></i>
+          </div>
+          <h3 class="font-display text-xl font-bold text-white mb-2">Precision Surface Grinders</h3>
+          <p class="text-xs text-orange-400 font-medium mb-3">Flatness &amp; Parallelism Finishing</p>
+          <p class="text-slate-300 text-sm leading-relaxed mb-4">
+            Delivering superior surface finish (low Ra values), strict parallelism, and exact thickness control on die plates, wear strips, and gauge blocks.
+          </p>
+          <div class="text-xs font-mono text-slate-400 pt-3 border-t border-slate-700/80 flex justify-between">
+            <span>Flatness: High Grade</span>
+            <span>Magnetic Chuck</span>
+          </div>
+        </div>
+
+        <!-- Machine 4: Heavy-Duty Lathe Machines -->
+        <div data-category="conventional" class="machine-card bg-slate-800/80 border border-slate-700 hover:border-orange-500/70 rounded-2xl p-6 transition-all">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-1 rounded bg-blue-500/15 text-blue-400 font-mono text-xs font-semibold">TURNING</span>
+            <i class="fa-solid fa-circle-notch text-slate-500 text-xl"></i>
+          </div>
+          <h3 class="font-display text-xl font-bold text-white mb-2">Heavy-Duty Lathe Machines</h3>
+          <p class="text-xs text-orange-400 font-medium mb-3">Precision Turning &amp; Boring</p>
+          <p class="text-slate-300 text-sm leading-relaxed mb-4">
+            High-torque turning centers for roughing and finish turning of shafts, guide pillars, bushes, hydraulic cylinders, and cylindrical rollers.
+          </p>
+          <div class="text-xs font-mono text-slate-400 pt-3 border-t border-slate-700/80 flex justify-between">
+            <span>OD / ID Turning</span>
+            <span>Threading &amp; Boring</span>
+          </div>
+        </div>
+
+        <!-- Machine 5: Milling Machines -->
+        <div data-category="conventional" class="machine-card bg-slate-800/80 border border-slate-700 hover:border-orange-500/70 rounded-2xl p-6 transition-all">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-1 rounded bg-blue-500/15 text-blue-400 font-mono text-xs font-semibold">MACHINING</span>
+            <i class="fa-solid fa-sliders text-slate-500 text-xl"></i>
+          </div>
+          <h3 class="font-display text-xl font-bold text-white mb-2">Turret &amp; Universal Milling</h3>
+          <p class="text-xs text-orange-400 font-medium mb-3">DRO Equipped Precision Milling</p>
+          <p class="text-slate-300 text-sm leading-relaxed mb-4">
+            Digital Readout (DRO) equipped milling machines for rapid squaring, slotting, keyway cutting, drilling, and fixture base preparation.
+          </p>
+          <div class="text-xs font-mono text-slate-400 pt-3 border-t border-slate-700/80 flex justify-between">
+            <span>3-Axis DRO</span>
+            <span>Slotting &amp; Drilling</span>
+          </div>
+        </div>
+
+        <!-- Machine 6: CAD/CAM Support -->
+        <div data-category="software" class="machine-card bg-slate-800/80 border border-slate-700 hover:border-orange-500/70 rounded-2xl p-6 transition-all">
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-1 rounded bg-emerald-500/15 text-emerald-400 font-mono text-xs font-semibold">DIGITAL DESIGN</span>
+            <i class="fa-solid fa-laptop-code text-slate-500 text-xl"></i>
+          </div>
+          <h3 class="font-display text-xl font-bold text-white mb-2">CAD / CAM Engineering</h3>
+          <p class="text-xs text-orange-400 font-medium mb-3">Siemens NX &amp; AutoCAD Workstation</p>
+          <p class="text-slate-300 text-sm leading-relaxed mb-4">
+            Dedicated design desk running Siemens NX for 3D solid modeling, toolpath generation, and AutoCAD for 2D manufacturing drafting &amp; DFM checks.
+          </p>
+          <div class="text-xs font-mono text-slate-400 pt-3 border-t border-slate-700/80 flex justify-between">
+            <span>Siemens NX</span>
+            <span>AutoCAD 2D/3D</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. MATERIALS & SURFACE TREATMENTS -->
+  <section id="materials" class="py-20 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="inline-block px-3 py-1 rounded-full bg-orange-500/10 text-orange-600 text-xs font-bold uppercase tracking-widest mb-3">
+          Metallurgy &amp; Finishing
+        </span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+          Materials Worked &amp; Surface Treatments
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg">
+          We procure certified tool &amp; alloy steels and manage complete post-machining heat treatment and anti-corrosion surface finishes.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-10">
+        
+        <!-- Column 1: Tool & Alloy Steels -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-8">
+          <div class="flex items-center gap-3.5 mb-6 pb-4 border-b border-slate-200">
+            <div class="w-11 h-11 rounded-xl bg-slate-900 text-orange-400 flex items-center justify-center">
+              <i class="fa-solid fa-cubes-stacked text-lg"></i>
+            </div>
+            <div>
+              <h3 class="font-display text-2xl font-bold text-slate-900">Tool &amp; Alloy Steels Worked</h3>
+              <p class="text-xs text-slate-500">Certified grades with material test certificate (MTC) options</p>
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <!-- Material Item -->
+            <div class="bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm flex items-start justify-between gap-4">
+              <div>
+                <h4 class="font-display font-bold text-slate-900 text-base flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-orange-500"></span>
+                  H13 Hot Die Steel
+                </h4>
+                <p class="text-xs text-slate-600 mt-1">Chromium-molybdenum-vanadium hot work tool steel ideal for die casting dies, extrusion tooling, and high-thermal-shock inserts.</p>
+              </div>
+              <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-700 font-mono text-xs shrink-0">Hot Work</span>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm flex items-start justify-between gap-4">
+              <div>
+                <h4 class="font-display font-bold text-slate-900 text-base flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-orange-500"></span>
+                  EN31 High Carbon Alloy Steel
+                </h4>
+                <p class="text-xs text-slate-600 mt-1">High-hardness bearing grade steel offering superior wear resistance for punches, guide pillars, bushes, and precision gauges.</p>
+              </div>
+              <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-700 font-mono text-xs shrink-0">High Wear</span>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm flex items-start justify-between gap-4">
+              <div>
+                <h4 class="font-display font-bold text-slate-900 text-base flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-orange-500"></span>
+                  EN8 Medium Carbon Steel
+                </h4>
+                <p class="text-xs text-slate-600 mt-1">Versatile engineering steel with high tensile strength used for shafts, studs, bolts, gears, and stressed SPM components.</p>
+              </div>
+              <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-700 font-mono text-xs shrink-0">High Tensile</span>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm flex items-start justify-between gap-4">
+              <div>
+                <h4 class="font-display font-bold text-slate-900 text-base flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-orange-500"></span>
+                  S13 Tool Steel
+                </h4>
+                <p class="text-xs text-slate-600 mt-1">Specialized shock-resisting and high-toughness tool steel engineered for heavy-duty forming dies and high-impact tooling.</p>
+              </div>
+              <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-700 font-mono text-xs shrink-0">Shock Tough</span>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl border border-slate-200/80 shadow-sm flex items-start justify-between gap-4">
+              <div>
+                <h4 class="font-display font-bold text-slate-900 text-base flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-orange-500"></span>
+                  Mild Steel (MS / IS 2062)
+                </h4>
+                <p class="text-xs text-slate-600 mt-1">Structural grade plates and blocks for machine bases, bolster plates, welding fixtures, and general fabrication assemblies.</p>
+              </div>
+              <span class="px-2.5 py-1 rounded bg-slate-100 text-slate-700 font-mono text-xs shrink-0">Structural</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Heat Treatment & Surface Finishes -->
+        <div class="bg-slate-900 text-white rounded-2xl border border-slate-800 p-8 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3.5 mb-6 pb-4 border-b border-slate-800">
+              <div class="w-11 h-11 rounded-xl bg-orange-500 text-white flex items-center justify-center">
+                <i class="fa-solid fa-fire-flame-curved text-lg"></i>
+              </div>
+              <div>
+                <h3 class="font-display text-2xl font-bold text-white">Heat Treatment &amp; Surface Finishes</h3>
+                <p class="text-xs text-slate-400">Complete metallurgical hardening &amp; protective coatings</p>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/80">
+                <div class="flex items-center justify-between mb-1">
+                  <h4 class="font-display font-bold text-orange-400 text-base">Hardening &amp; Tempering</h4>
+                  <span class="text-xs font-mono text-slate-300 bg-slate-900 px-2.5 py-0.5 rounded">Up to 62 HRC</span>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Controlled vacuum &amp; salt-bath hardening followed by multi-stage tempering for maximum core toughness and dimensional stability.
+                </p>
+              </div>
+
+              <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/80">
+                <div class="flex items-center justify-between mb-1">
+                  <h4 class="font-display font-bold text-orange-400 text-base">Gas &amp; Plasma Nitriding</h4>
+                  <span class="text-xs font-mono text-slate-300 bg-slate-900 px-2.5 py-0.5 rounded">Surface Case</span>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Case-hardening diffusion process enhancing surface hardness, anti-galling properties, and fatigue life without thermal distortion.
+                </p>
+              </div>
+
+              <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/80">
+                <div class="flex items-center justify-between mb-1">
+                  <h4 class="font-display font-bold text-orange-400 text-base">Grey Zinc-Nickel Electroplating</h4>
+                  <span class="text-xs font-mono text-slate-300 bg-slate-900 px-2.5 py-0.5 rounded">High Salt-Spray</span>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Automotive-grade Zn-Ni alloy plating providing superior corrosion resistance in harsh industrial and robotic weld-cell environments.
+                </p>
+              </div>
+
+              <div class="bg-slate-800/80 p-4 rounded-xl border border-slate-700/80">
+                <div class="flex items-center justify-between mb-1">
+                  <h4 class="font-display font-bold text-orange-400 text-base">Blackodising (Black Oxide)</h4>
+                  <span class="text-xs font-mono text-slate-300 bg-slate-900 px-2.5 py-0.5 rounded">Zero Build-Up</span>
+                </div>
+                <p class="text-xs text-slate-300 leading-relaxed">
+                  Conversion coating offering mild corrosion protection, anti-glare finish, and oil retention with virtually zero dimensional change.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Note -->
+          <div class="mt-6 p-4 rounded-xl bg-orange-500/10 border border-orange-500/30 flex items-center gap-3">
+            <i class="fa-solid fa-circle-info text-orange-400 text-lg"></i>
+            <p class="text-xs text-slate-200">
+              All heat-treated parts undergo post-treatment finish grinding or Wire-Cut EDM skimming to restore micron tolerances.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. WHY CHOOSE SKS PRECISION TOOLS / QUALITY ASSURANCE -->
+  <section class="py-16 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-3xl border border-slate-200 p-8 sm:p-12 shadow-sm">
+        <div class="max-w-3xl mb-10">
+          <span class="text-xs font-bold uppercase tracking-widest text-orange-600 block mb-2">Quality Assurance &amp; Reliability</span>
+          <h2 class="font-display text-3xl font-bold text-slate-900 mb-3">
+            Built for Tier-1 &amp; Tier-2 Industrial Standards
+          </h2>
+          <p class="text-slate-600 text-base">
+            We understand that a single micron deviation can halt an entire press shop or assembly line. Our workflow is structured around zero-defect delivery.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80">
+            <div class="w-10 h-10 rounded-lg bg-orange-500 text-white flex items-center justify-center mb-4">
+              <i class="fa-solid fa-ruler-combined"></i>
+            </div>
+            <h4 class="font-display font-bold text-slate-900 text-lg mb-2">Strict Dimensional QC</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Every critical bore, pitch, and flatness parameter is verified against customer 2D drawings prior to dispatch.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80">
+            <div class="w-10 h-10 rounded-lg bg-slate-900 text-orange-400 flex items-center justify-center mb-4">
+              <i class="fa-solid fa-file-invoice-dollar"></i>
+            </div>
+            <h4 class="font-display font-bold text-slate-900 text-lg mb-2">GST &amp; MSME Compliant</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Hassle-free vendor onboarding with valid GSTIN, Udyam MSME registration, e-Way bills, and transparent PO tracking.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80">
+            <div class="w-10 h-10 rounded-lg bg-orange-500 text-white flex items-center justify-center mb-4">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <h4 class="font-display font-bold text-slate-900 text-lg mb-2">Direct Engineering Desk</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Communicate directly with technical leadership for DFM suggestions, material selection, and real-time job status.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80">
+            <div class="w-10 h-10 rounded-lg bg-slate-900 text-orange-400 flex items-center justify-center mb-4">
+              <i class="fa-solid fa-box-open"></i>
+            </div>
+            <h4 class="font-display font-bold text-slate-900 text-lg mb-2">Anti-Rust Packaging</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Precision ground surfaces are coated with rust-preventive oil and VCI wrapping for damage-free transit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. CONTACT & INTERACTIVE QUOTATION (RFQ) SECTION -->
+  <section id="contact" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12">
+        
+        <!-- Left Contact Details Column -->
+        <div class="lg:col-span-5 flex flex-col justify-between">
+          <div>
+            <span class="inline-block px-3 py-1 rounded-full bg-orange-500/15 border border-orange-500/30 text-orange-400 text-xs font-bold uppercase tracking-widest mb-4">
+              Direct Engineering Contact
+            </span>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold text-white mb-4">
+              Request a Technical Quote or Shop Visit
+            </h2>
+            <p class="text-slate-300 text-base leading-relaxed mb-8">
+              Share your part specifications, material grade, or CAD drawing requirements. We respond rapidly with competitive pricing and firm delivery timelines.
+            </p>
+
+            <!-- Contact Cards -->
+            <div class="space-y-4">
+              <!-- Contact Person -->
+              <div class="bg-slate-800/80 border border-slate-700 p-4 rounded-xl flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-user-tie text-xl"></i>
+                </div>
+                <div>
+                  <span class="text-xs text-slate-400 uppercase tracking-wider block">Primary Contact Person</span>
+                  <span class="font-display font-bold text-lg text-white">Anuj Kumar</span>
+                  <span class="text-xs text-orange-400 block">SKS Precision Tools</span>
+                </div>
+              </div>
+
+              <!-- Phone & WhatsApp -->
+              <div class="bg-slate-800/80 border border-slate-700 p-4 rounded-xl flex items-center justify-between gap-4">
+                <div class="flex items-center gap-4">
+                  <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+                    <i class="fa-brands fa-whatsapp text-2xl"></i>
+                  </div>
+                  <div>
+                    <span class="text-xs text-slate-400 uppercase tracking-wider block">Phone &amp; WhatsApp</span>
+                    <a href="tel:+918791400702" class="font-display font-bold text-lg text-white hover:text-orange-400 transition">
+                      +91 87914 00702
+                    </a>
+                  </div>
+                </div>
+                <a href="https://wa.me/918791400702?text=Hello%20Anuj%20ji,%20I%20would%20like%20to%20inquire%20about%20precision%20machining%20/%20die-mold%20work%20at%20SKS%20Precision%20Tools." target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold transition shrink-0">
+                  Chat Now
+                </a>
+              </div>
+
+              <!-- Email -->
+              <div class="bg-slate-800/80 border border-slate-700 p-4 rounded-xl flex items-center justify-between gap-4">
+                <div class="flex items-center gap-4">
+                  <div class="w-12 h-12 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center shrink-0">
+                    <i class="fa-solid fa-envelope text-xl"></i>
+                  </div>
+                  <div>
+                    <span class="text-xs text-slate-400 uppercase tracking-wider block">Send Drawings (CAD/PDF)</span>
+                    <a href="mailto:sksprecisiontools@gmail.com" class="font-display font-semibold text-sm sm:text-base text-white hover:text-orange-400 transition break-all">
+                      sksprecisiontools@gmail.com
+                    </a>
+                  </div>
+                </div>
+                <button onclick="copyEmail()" class="px-3 py-2 rounded-lg bg-slate-700 hover:bg-slate-600 text-slate-200 text-xs font-medium transition shrink-0 cursor-pointer" title="Copy Email">
+                  <i class="fa-regular fa-copy"></i>
+                </button>
+              </div>
+
+              <!-- Workshop Location -->
+              <div class="bg-slate-800/80 border border-slate-700 p-4 rounded-xl flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-location-dot text-xl"></i>
+                </div>
+                <div>
+                  <span class="text-xs text-slate-400 uppercase tracking-wider block">Manufacturing Facility</span>
+                  <span class="font-display font-bold text-base text-white">Habibpur, Greater Noida</span>
+                  <span class="text-xs text-slate-400 block">Gautam Buddha Nagar, Uttar Pradesh, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Interactive RFQ Form Column -->
+        <div class="lg:col-span-7">
+          <div class="bg-white text-slate-900 rounded-2xl p-6 sm:p-10 shadow-2xl">
+            <div class="border-b border-slate-200 pb-5 mb-6 flex flex-wrap items-center justify-between gap-2">
+              <div>
+                <h3 class="font-display text-2xl font-bold text-slate-900">Instant RFQ Inquiry Form</h3>
+                <p class="text-xs text-slate-500 mt-1">Fill out the job parameters below for an immediate quotation estimate.</p>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-orange-500/10 text-orange-600 font-mono text-xs font-bold">
+                FAST RESPONSE
+              </span>
+            </div>
+
+            <!-- Form -->
+            <form id="rfq-form" class="space-y-5">
+              <div class="grid sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="client-name" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Your Name *</label>
+                  <input type="text" id="client-name" required placeholder="e.g. Rajesh Sharma" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none text-sm transition" />
+                </div>
+                <div>
+                  <label for="company-name" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Company Name *</label>
+                  <input type="text" id="company-name" required placeholder="e.g. Apex Auto Components Pvt Ltd" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none text-sm transition" />
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="client-phone" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Phone / WhatsApp Number *</label>
+                  <input type="tel" id="client-phone" required placeholder="+91 98XXX XXXXX" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none text-sm transition" />
+                </div>
+                <div>
+                  <label for="client-email" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Work Email</label>
+                  <input type="email" id="client-email" placeholder="purchase@company.com" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none text-sm transition" />
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-3 gap-5">
+                <div>
+                  <label for="process-select" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Primary Process *</label>
+                  <select id="process-select" required class="w-full px-3.5 py-3 rounded-xl bg-slate-50 border border-slate-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none text-sm transition">
+                    <option value="VMC Machining">VMC Machining</option>
+                    <option value="Wire-Cut EDM">Wire-Cut EDM</option>
+                    <option value="Die & Mold Child Parts">Die &amp; Mold Child Parts</option>
+                    <option value="SPM / Drilling Machine">3-Head Drilling SPM</option>
+                    <option value="Robotics / Pad Sets">Robotics &amp; Pad Sets</option>
+                    <option value="Turning / Milling / Grinding">Turning / Milling / Grinding</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="material-select" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Material Grade *</label>
+                  <select id="material-select" required class="w-full px-3.5 py-3 rounded-xl bg-slate-50 border border-slate-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none text-sm transition">
+                    <option value="H13 Hot Die Steel">H13 Hot Die Steel</option>
+                    <option value="EN31 Alloy Steel">EN31 Alloy Steel</option>
+                    <option value="EN8 Carbon Steel">EN8 Carbon Steel</option>
+                    <option value="S13 Tool Steel">S13 Tool Steel</option>
+                    <option value="Mild Steel (MS)">Mild Steel (MS)</option>
+                    <option value="Client Supplied Material">Client Supplied Material</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="quantity-input" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Est. Quantity *</label>
+                  <input type="text" id="quantity-input" required placeholder="e.g. 25 Nos / 1 Set" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none text-sm transition" />
+                </div>
+              </div>
+
+              <div>
+                <label for="finish-select" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Required Heat Treatment / Finish</label>
+                <select id="finish-select" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none text-sm transition">
+                  <option value="As Machined / Ground">As Machined / Surface Ground</option>
+                  <option value="Hardening & Tempering (58-62 HRC)">Hardening &amp; Tempering (58-62 HRC)</option>
+                  <option value="Nitriding">Nitriding</option>
+                  <option value="Grey Zinc-Nickel Plating">Grey Zinc-Nickel Electroplating</option>
+                  <option value="Blackodising">Blackodising</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="project-notes" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Part Specifications / Tolerance Notes</label>
+                <textarea id="project-notes" rows="3" placeholder="Describe part dimensions, critical tolerances, or mention if you will email/WhatsApp the CAD/PDF drawing..." class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-500/20 outline-none text-sm transition"></textarea>
+              </div>
+
+              <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                <button type="submit" class="flex-1 py-4 px-6 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-display font-bold text-base tracking-wide shadow-lg shadow-orange-500/25 transition-all flex items-center justify-center gap-2 cursor-pointer">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  <span>Submit Quotation Request</span>
+                </button>
+                <button type="button" onclick="sendViaWhatsApp()" class="py-4 px-5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-display font-semibold text-sm transition-all flex items-center justify-center gap-2 cursor-pointer">
+                  <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i>
+                  <span>Send via WhatsApp</span>
+                </button>
+              </div>
+            </form>
+
+            <!-- Instant Confirmation Feedback Panel (Hidden by default) -->
+            <div id="rfq-confirmation" class="hidden mt-6 p-6 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-950">
+              <div class="flex items-start gap-4">
+                <div class="w-11 h-11 rounded-full bg-emerald-500 text-white flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-check text-xl"></i>
+                </div>
+                <div class="flex-1">
+                  <h4 class="font-display font-bold text-lg text-emerald-900">Quotation Inquiry Logged Successfully!</h4>
+                  <p id="rfq-summary-text" class="text-sm text-emerald-800 mt-1 leading-relaxed"></p>
+                  <div class="mt-4 flex flex-wrap gap-3">
+                    <a id="direct-whatsapp-link" href="#" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold inline-flex items-center gap-2 transition">
+                      <i class="fa-brands fa-whatsapp"></i> Forward Details to Anuj Kumar on WhatsApp
+                    </a>
+                    <button type="button" onclick="resetRfqForm()" class="px-4 py-2 rounded-lg bg-white border border-emerald-300 text-emerald-800 hover:bg-emerald-100 text-xs font-semibold transition cursor-pointer">
+                      Submit Another Inquiry
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. PROFESSIONAL FOOTER -->
+  <footer class="bg-slate-950 text-slate-400 pt-16 pb-10 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800/80">
+        
+        <!-- Brand Info -->
+        <div class="lg:col-span-1">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 rounded-lg bg-orange-500 flex items-center justify-center text-white font-display font-bold">
+              SKS
+            </div>
+            <span class="font-display font-bold text-lg text-white tracking-wide">
+              SKS PRECISION TOOLS
+            </span>
+          </div>
+          <p class="text-xs leading-relaxed text-slate-400 mb-4">
+            Premier Tool Room, Custom Die &amp; Mold Child Parts, Special Purpose Machines, and Precision CNC/VMC Job-Work facility in Greater Noida, UP.
+          </p>
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300">
+            <i class="fa-solid fa-award text-orange-500"></i>
+            <span>GST &amp; Udyam MSME Registered</span>
+          </div>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div>
+          <h4 class="font-display font-bold text-white text-sm uppercase tracking-wider mb-4">Quick Links</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="#home" class="hover:text-orange-400 transition">Home</a></li>
+            <li><a href="#about" class="hover:text-orange-400 transition">About Us &amp; Quality</a></li>
+            <li><a href="#capabilities" class="hover:text-orange-400 transition">Capabilities &amp; Products</a></li>
+            <li><a href="#machinery" class="hover:text-orange-400 transition">Machinery &amp; CAD/CAM</a></li>
+            <li><a href="#materials" class="hover:text-orange-400 transition">Materials &amp; Finishes</a></li>
+          </ul>
+        </div>
+
+        <!-- Core Services -->
+        <div>
+          <h4 class="font-display font-bold text-white text-sm uppercase tracking-wider mb-4">Core Capabilities</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li>Die &amp; Mold Child Parts</li>
+            <li>3-Head Hydraulic Drilling SPMs</li>
+            <li>Robot Cylinder Pad Sets</li>
+            <li>VMC &amp; Wire-Cut EDM Job Work</li>
+            <li>Precision Surface Grinding</li>
+          </ul>
+        </div>
+
+        <!-- Contact & Hours -->
+        <div>
+          <h4 class="font-display font-bold text-white text-sm uppercase tracking-wider mb-4">Workshop &amp; Hours</h4>
+          <ul class="space-y-2.5 text-xs leading-relaxed">
+            <li class="flex items-start gap-2.5">
+              <i class="fa-solid fa-location-dot text-orange-500 mt-0.5"></i>
+              <span>Habibpur, Greater Noida, Gautam Buddha Nagar, Uttar Pradesh, India</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i class="fa-solid fa-user text-orange-500"></i>
+              <span>Contact: <strong class="text-slate-200">Anuj Kumar</strong></span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i class="fa-solid fa-phone text-orange-500"></i>
+              <a href="tel:+918791400702" class="hover:text-orange-400 transition">+91 87914 00702</a>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i class="fa-solid fa-clock text-orange-500"></i>
+              <span>Mon – Sat: 9:00 AM – 7:00 PM IST</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+        <p>&copy; <span id="current-year"></span> SKS Precision Tools. All Rights Reserved.</p>
+        <p>Precision Engineering &amp; Tool Room Solutions • Greater Noida, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Action Button (WhatsApp) -->
+  <a href="https://wa.me/918791400702?text=Hello%20SKS%20Precision%20Tools,%20I%20have%20a%20machining%20/%20tooling%20inquiry." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" class="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-2xl shadow-emerald-500/30 flex items-center justify-center transition-transform hover:scale-110">
+    <i class="fa-brands fa-whatsapp text-3xl"></i>
+  </a>
+
+  <!-- Custom Toast Notification (No alert() used) -->
+  <div id="toast-notification" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 hidden bg-slate-900 text-white border border-slate-700 px-5 py-3 rounded-xl shadow-2xl items-center gap-3 text-sm">
+    <i class="fa-solid fa-circle-check text-orange-500"></i>
+    <span id="toast-message">Notification</span>
+  </div>
+
+  <!-- Interactive JavaScript -->
+  <script>
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Smooth scroll & focus on Quote Form
+    function openQuoteModal() {
+      const contactSection = document.getElementById('contact');
+      const nameInput = document.getElementById('client-name');
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() => {
+        nameInput.focus();
+      }, 600);
+    }
+
+    // Machinery Filter Tabs Logic
+    const machineTabs = document.querySelectorAll('.machine-tab');
+    const machineCards = document.querySelectorAll('.machine-card');
+
+    machineTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Update active button styling
+        machineTabs.forEach(t => {
+          t.classList.remove('bg-orange-500', 'text-white');
+          t.classList.add('bg-slate-800', 'text-slate-300');
+        });
+        tab.classList.remove('bg-slate-800', 'text-slate-300');
+        tab.classList.add('bg-orange-500', 'text-white');
+
+        const filter = tab.getAttribute('data-filter');
+
+        machineCards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          if (filter === 'all' || category === filter) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // Custom Toast Notification Helper
+    function showToast(message) {
+      const toast = document.getElementById('toast-notification');
+      const toastMsg = document.getElementById('toast-message');
+      toastMsg.textContent = message;
+      toast.classList.remove('hidden');
+      toast.classList.add('flex');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+        toast.classList.remove('flex');
+      }, 3500);
+    }
+
+    // Copy Email using execCommand fallback (iFrame safe)
+    function copyEmail() {
+      const email = 'sksprecisiontools@gmail.com';
+      const tempInput = document.createElement('input');
+      tempInput.value = email;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand('copy');
+      document.body.removeChild(tempInput);
+      showToast('Email copied: sksprecisiontools@gmail.com');
+    }
+
+    // Build WhatsApp Message from Form Data
+    function buildWhatsAppUrl() {
+      const name = document.getElementById('client-name').value.trim() || 'Prospective Client';
+      const company = document.getElementById('company-name').value.trim() || 'Not Specified';
+      const phone = document.getElementById('client-phone').value.trim() || 'Not Specified';
+      const process = document.getElementById('process-select').value;
+      const material = document.getElementById('material-select').value;
+      const qty = document.getElementById('quantity-input').value.trim() || 'TBD';
+      const finish = document.getElementById('finish-select').value;
+      const notes = document.getElementById('project-notes').value.trim() || 'None';
+
+      const message = `*New RFQ Inquiry - SKS Precision Tools*%0A` +
+        `-----------------------------%0A` +
+        `*Name:* ${encodeURIComponent(name)}%0A` +
+        `*Company:* ${encodeURIComponent(company)}%0A` +
+        `*Contact:* ${encodeURIComponent(phone)}%0A` +
+        `*Process:* ${encodeURIComponent(process)}%0A` +
+        `*Material:* ${encodeURIComponent(material)}%0A` +
+        `*Quantity:* ${encodeURIComponent(qty)}%0A` +
+        `*Heat Treatment/Finish:* ${encodeURIComponent(finish)}%0A` +
+        `*Notes:* ${encodeURIComponent(notes)}`;
+
+      return `https://wa.me/918791400702?text=${message}`;
+    }
+
+    // Direct Send via WhatsApp Button
+    function sendViaWhatsApp() {
+      const url = buildWhatsAppUrl();
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+
+    // RFQ Form Submission Handling
+    const rfqForm = document.getElementById('rfq-form');
+    const rfqConfirmation = document.getElementById('rfq-confirmation');
+    const rfqSummaryText = document.getElementById('rfq-summary-text');
+    const directWhatsappLink = document.getElementById('direct-whatsapp-link');
+
+    rfqForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const name = document.getElementById('client-name').value.trim();
+      const company = document.getElementById('company-name').value.trim();
+      const process = document.getElementById('process-select').value;
+      const material = document.getElementById('material-select').value;
+      const qty = document.getElementById('quantity-input').value.trim();
+
+      const refId = 'SKS-' + Math.floor(1000 + Math.random() * 9000);
+
+      rfqSummaryText.innerHTML = `Reference ID: <strong>${refId}</strong>. Thank you, <strong>${name}</strong> (${company}). Your inquiry for <strong>${process}</strong> in <strong>${material}</strong> (Qty: ${qty}) is ready. Anuj Kumar will review and reach out shortly.`;
+      
+      directWhatsappLink.href = buildWhatsAppUrl();
+
+      rfqForm.classList.add('hidden');
+      rfqConfirmation.classList.remove('hidden');
+      showToast(`RFQ ${refId} generated successfully!`);
+    });
+
+    function resetRfqForm() {
+      rfqForm.reset();
+      rfqConfirmation.classList.add('hidden');
+      rfqForm.classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
